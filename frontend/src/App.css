@@ -1,0 +1,173 @@
+/* App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: left;
+}
+
+h1, h3, h4 {
+  color: #0077cc;
+  margin-bottom: 12px;
+}
+
+section {
+  margin-bottom: 24px;
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert {
+  background-color: #ffdddd;
+  color: #900;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.filter-section label {
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.filter-section select {
+  margin-left: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.summary p {
+  font-size: 1.1rem;
+  margin: 4px 0;
+}
+
+.summary strong {
+  color: #0077cc;
+}
+
+form label {
+  display: block;
+  margin: 8px 0 4px;
+  font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form select {
+  width: 100%;
+  max-width: 300px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+form button + button {
+  margin-left: 12px;
+  background-color: #888;
+}
+
+form button + button:hover {
+  background-color: #555;
+}
+
+.entries-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.entries-table th,
+.entries-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.entries-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.entries-table tr:hover {
+  background-color: #eef6ff;
+}
+
+.entries-table button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #c00;
+  transition: color 0.2s ease;
+}
+
+.entries-table button:hover {
+  color: #900;
+}
+
+.charts-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chart-child {
+  flex: 1 1 300px;
+  min-height: 250px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.chart-child h4 {
+  margin-top: 0;
+  color: #0077cc;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px 15px;
+  }
+  
+  form input[type="number"],
+  form input[type="date"],
+  form input[type="text"],
+  form select {
+    max-width: 100%;
+  }
+}
