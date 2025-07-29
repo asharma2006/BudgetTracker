@@ -11,6 +11,9 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The link above does not work so once the files have been downloaded in two seperate terminals cd frontend and backend.
+Then to start use npm start once in
+
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
